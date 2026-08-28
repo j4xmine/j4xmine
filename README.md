@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/mardu-profile-impact-v5.svg" alt="Mardu.io — GitHub profile" width="100%" />
+  <img src="./assets/mardu-profile-professional-v6.svg" alt="Mardu.io — GitHub profile" width="100%" />
 </p>
 
 <p align="center">
