@@ -1,153 +1,132 @@
 <svg width="1200" height="1000" viewBox="0 0 1200 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="1000" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#06070D"/>
-      <stop offset="0.55" stop-color="#0A0713"/>
-      <stop offset="1" stop-color="#05060B"/>
+      <stop stop-color="#060913"/>
+      <stop offset="0.5" stop-color="#090A14"/>
+      <stop offset="1" stop-color="#080611"/>
     </linearGradient>
-    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
       <stop stop-color="#8B5CF6"/>
-      <stop offset="0.55" stop-color="#D946EF"/>
+      <stop offset="0.52" stop-color="#D946EF"/>
       <stop offset="1" stop-color="#7C3AED"/>
     </linearGradient>
-    <linearGradient id="title" x1="180" y1="80" x2="800" y2="170" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFFFFF"/>
-      <stop offset="0.48" stop-color="#F3E8FF"/>
-      <stop offset="1" stop-color="#C084FC"/>
+    <linearGradient id="footer" x1="48" y1="0" x2="1152" y2="0">
+      <stop stop-color="#10111B"/>
+      <stop offset="0.6" stop-color="#11101D"/>
+      <stop offset="1" stop-color="#24103A"/>
     </linearGradient>
-    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#22D3EE"/>
-      <stop offset="1" stop-color="#14B8A6"/>
-    </linearGradient>
-    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(220 120) rotate(40) scale(420 300)">
-      <stop stop-color="#8B5CF6" stop-opacity="0.28"/>
-      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1030 760) rotate(130) scale(370 330)">
-      <stop stop-color="#D946EF" stop-opacity="0.2"/>
-      <stop offset="1" stop-color="#D946EF" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-      <path d="M42 0H0V42" stroke="#9B87F5" stroke-opacity="0.055" stroke-width="1"/>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" stroke="#B794F4" stroke-opacity="0.035" stroke-width="1"/>
     </pattern>
-    <filter id="purpleGlow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="10" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <filter id="glowPurple" x="-70%" y="-70%" width="240%" height="240%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#A855F7" flood-opacity="0.45"/>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <clipPath id="round"><rect width="1200" height="1000" rx="30"/></clipPath>
   </defs>
 
-  <g clip-path="url(#round)">
-    <rect width="1200" height="1000" fill="url(#bg)"/>
-    <rect width="1200" height="1000" fill="url(#grid)"/>
-    <rect width="1200" height="1000" fill="url(#glowA)"/>
-    <rect width="1200" height="1000" fill="url(#glowB)"/>
+  <rect width="1200" height="1000" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="1000" rx="28" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1198" height="998" rx="27" stroke="#8B5CF6" stroke-opacity="0.38" stroke-width="2"/>
 
-    <path d="M64 56H252L278 79H522" stroke="#A855F7" stroke-opacity="0.55" stroke-width="2"/>
-    <circle cx="78" cy="56" r="4" fill="#D946EF"/>
-    <circle cx="95" cy="56" r="4" fill="#8B5CF6"/>
-    <circle cx="112" cy="56" r="4" fill="#6D28D9"/>
-    <path d="M1035 58H1114L1137 81" stroke="#8B5CF6" stroke-opacity="0.45" stroke-width="2"/>
+  <!-- circuit ornaments -->
+  <g stroke="#A855F7" stroke-opacity="0.65" stroke-width="2">
+    <path d="M42 44H258L278 62H610"/>
+    <circle cx="42" cy="44" r="4" fill="#D946EF" stroke="none" filter="url(#softGlow)"/>
+    <path d="M1040 42H1134L1164 72V146"/>
+    <path d="M1004 56H1120L1150 86V152" stroke-opacity="0.35"/>
+  </g>
 
-    <!-- Brand mark -->
-    <g transform="translate(72 82)" filter="url(#softGlow)">
-      <path d="M8 5L38 28L68 5V68L38 48L8 68V5Z" fill="url(#violet)"/>
-      <path d="M19 23L38 38L57 23V48L38 35L19 48V23Z" fill="#F5F3FF" fill-opacity="0.95"/>
+  <!-- logo -->
+  <g transform="translate(62 76)">
+    <path d="M0 0L42 31L84 0V72L42 44L0 72V0Z" fill="url(#brand)" filter="url(#softGlow)"/>
+    <path d="M14 23L42 44L70 23V48L42 29L14 48V23Z" fill="#F5F3FF" fill-opacity="0.92"/>
+  </g>
+  <text x="176" y="126" fill="#F8FAFC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="66" font-weight="800" letter-spacing="1">MARDU.IO</text>
+  <text x="178" y="164" fill="#B8B4C7" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" font-weight="500" letter-spacing="2.5">Software para negócios reais</text>
+
+  <!-- identity card -->
+  <rect x="48" y="210" width="535" height="205" rx="20" fill="#0D0E17" fill-opacity="0.92" stroke="#9B5DE5" stroke-opacity="0.82"/>
+  <circle cx="146" cy="312" r="65" stroke="#B45CFF" stroke-width="3" fill="#090A12" filter="url(#softGlow)"/>
+  <path d="M112 275L146 300L180 275V346L146 323L112 346V275Z" fill="url(#brand)"/>
+  <path d="M122 297L146 315L170 297V319L146 303L122 319V297Z" fill="#F8FAFC" fill-opacity="0.9"/>
+  <text x="239" y="285" fill="#FFFFFF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="43" font-weight="800">j4xmine</text>
+  <text x="239" y="326" fill="#C25CFF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" font-weight="800" letter-spacing="1">FULL-STACK · PRODUTOS · ARQUITETURA</text>
+  <text x="239" y="366" fill="#BFC2CE" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">Construindo software que simplifica</text>
+  <text x="239" y="392" fill="#BFC2CE" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">operações reais.</text>
+
+  <!-- status card -->
+  <rect x="600" y="210" width="552" height="205" rx="20" fill="#0D0E17" fill-opacity="0.92" stroke="#7C5AA8" stroke-opacity="0.72"/>
+  <circle cx="636" cy="257" r="8" fill="#55E6A5" filter="url(#softGlow)"/>
+  <text x="655" y="265" fill="#F8FAFC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="700">Em construção contínua</text>
+  <text x="632" y="311" fill="#BFC2CE" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">⌖  Brasil</text>
+  <text x="632" y="347" fill="#BFC2CE" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">◉  github.com/j4xmine</text>
+  <text x="632" y="383" fill="#BFC2CE" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17">◎  mardu.io</text>
+  <line x1="872" y1="242" x2="872" y2="387" stroke="#343544"/>
+  <text x="905" y="268" fill="#D85BFF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="800" letter-spacing="1.4">CÓDIGO COM PROPÓSITO</text>
+  <text x="905" y="310" fill="#F8FAFC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="700">Menos etapas.</text>
+  <text x="905" y="344" fill="#F8FAFC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="700">Mais clareza.</text>
+  <text x="905" y="378" fill="#C85CFF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="800">Mais operação.</text>
+
+  <!-- em foco -->
+  <text x="50" y="462" fill="#B96CFF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="21" font-weight="800" letter-spacing="2.4">EM FOCO</text>
+  <line x1="166" y1="455" x2="1150" y2="455" stroke="#593076" stroke-opacity="0.7"/>
+
+  <!-- tech chips -->
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" text-anchor="middle">
+    <g><rect x="48" y="485" width="170" height="102" rx="16" fill="#0D0E17" stroke="#7950A5"/><circle cx="133" cy="509" r="6" fill="#D85BFF"/><path d="M113 545c6-11 18-17 30-13 13 4 20 18 16 31M111 563l45-36" stroke="#B96CFF" stroke-width="3" stroke-linecap="round"/><text x="133" y="570" fill="#F8FAFC">Offline-first</text></g>
+    <g><rect x="230" y="485" width="170" height="102" rx="16" fill="#0D0E17" stroke="#68548F"/><circle cx="315" cy="509" r="6" fill="#55E66E"/><path d="M298 552c20-3 30-16 30-35-21 3-34 14-34 31 0 10 7 18 18 19" stroke="#55E66E" stroke-width="3" fill="none"/><path d="M300 557c7-9 14-17 23-24" stroke="#55E66E" stroke-width="3"/><text x="315" y="570" fill="#F8FAFC">Spring Boot</text></g>
+    <g><rect x="412" y="485" width="170" height="102" rx="16" fill="#0D0E17" stroke="#68548F"/><circle cx="497" cy="509" r="6" fill="#56B4FF"/><path d="M472 548l27-27 12 12-27 27-12-12Zm14 14 12-12 20 20h-24l-8-8Z" fill="#45B8FF"/><text x="497" y="570" fill="#F8FAFC">Flutter</text></g>
+    <g><rect x="594" y="485" width="170" height="102" rx="16" fill="#0D0E17" stroke="#68548F"/><circle cx="679" cy="509" r="6" fill="#FF6F79"/><path d="M665 542c12 5 22 5 30 0M666 550c12 4 21 4 29 0M675 533c-8-8 10-9 1-19 12 8-5 12 5 21" stroke="#FF6F79" stroke-width="2.5" stroke-linecap="round"/><text x="679" y="570" fill="#F8FAFC">Java</text></g>
+    <g><rect x="776" y="485" width="170" height="102" rx="16" fill="#0D0E17" stroke="#68548F"/><circle cx="861" cy="509" r="6" fill="#45D69A"/><path d="M861 525c15 16 9 31 0 39-9-8-15-23 0-39Z" stroke="#45D69A" stroke-width="3" fill="none"/><path d="M861 530v34" stroke="#45D69A" stroke-width="2"/><text x="861" y="570" fill="#F8FAFC">MongoDB</text></g>
+    <g><rect x="958" y="485" width="194" height="102" rx="16" fill="#0D0E17" stroke="#68548F"/><circle cx="1055" cy="509" r="6" fill="#FFB849"/><text x="1055" y="548" fill="#FFB849" font-size="25" font-weight="500">aws</text><path d="M1033 554c17 11 35 11 49 1" stroke="#FFB849" stroke-width="2" stroke-linecap="round"/><text x="1055" y="570" fill="#F8FAFC">AWS</text></g>
+  </g>
+
+  <!-- projects -->
+  <text x="50" y="632" fill="#B96CFF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="21" font-weight="800" letter-spacing="2.4">PROJETOS</text>
+  <line x1="172" y1="625" x2="1150" y2="625" stroke="#593076" stroke-opacity="0.7"/>
+
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <g>
+      <rect x="48" y="654" width="258" height="180" rx="17" fill="#0C1118" stroke="#1DC8E5" stroke-opacity="0.85"/>
+      <circle cx="85" cy="694" r="18" stroke="#32D4F2"/><path d="M73 699c8-10 17-10 25 0M73 691c8-9 17-9 25 0" stroke="#32D4F2" stroke-width="2" stroke-linecap="round"/>
+      <text x="116" y="701" fill="#36D7EE" font-size="18" font-weight="800">Sistema Pescador</text>
+      <text x="68" y="746" fill="#E5E7EB" font-size="16">Gestão especializada para</text><text x="68" y="770" fill="#E5E7EB" font-size="16">entidades e pescadores.</text>
+      <text x="68" y="811" fill="#3CD7EE" font-size="12" font-weight="700" letter-spacing="0.7">OFFLINE-FIRST · MULTI-ENTIDADE</text>
     </g>
-
-    <text x="170" y="135" fill="url(#title)" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800" letter-spacing="1.5">MARDU.IO</text>
-    <text x="173" y="176" fill="#D8CCEA" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" letter-spacing="2.2">Software para negócios reais</text>
-
-    <!-- Identity card -->
-    <rect x="70" y="225" width="500" height="190" rx="24" fill="#0D0C18" fill-opacity="0.92" stroke="#8B5CF6" stroke-opacity="0.58" stroke-width="1.5"/>
-    <circle cx="145" cy="305" r="50" fill="#080810" stroke="#C084FC" stroke-width="3" filter="url(#purpleGlow)"/>
-    <path d="M118 279L145 299L172 279V333L145 314L118 333V279Z" fill="url(#violet)"/>
-    <text x="220" y="293" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="750">j4xmine</text>
-    <text x="221" y="327" fill="#D946EF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="650">FULL-STACK • PRODUTOS • ARQUITETURA</text>
-    <text x="221" y="362" fill="#AFA8BF" font-family="Segoe UI, Arial, sans-serif" font-size="16">Construindo software que simplifica operações reais.</text>
-
-    <!-- Status card -->
-    <rect x="600" y="225" width="530" height="190" rx="24" fill="#0D0C18" fill-opacity="0.92" stroke="#8B5CF6" stroke-opacity="0.44" stroke-width="1.5"/>
-    <circle cx="640" cy="270" r="7" fill="#65F58C" filter="url(#softGlow)"/>
-    <text x="660" y="278" fill="#F8F7FF" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="650">Em construção contínua</text>
-    <text x="640" y="320" fill="#B9B1C8" font-family="Segoe UI, Arial, sans-serif" font-size="16">▣ Brasil</text>
-    <text x="640" y="352" fill="#B9B1C8" font-family="Segoe UI, Arial, sans-serif" font-size="16">⌁ github.com/j4xmine</text>
-    <text x="640" y="384" fill="#B9B1C8" font-family="Segoe UI, Arial, sans-serif" font-size="16">↗ mardu.io</text>
-    <text x="900" y="278" fill="#E879F9" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.2">CÓDIGO COM PROPÓSITO</text>
-    <text x="900" y="309" fill="#F3F0F7" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="650">Menos etapas.</text>
-    <text x="900" y="338" fill="#F3F0F7" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="650">Mais clareza.</text>
-    <text x="900" y="367" fill="#C084FC" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700">Mais operação.</text>
-
-    <!-- Focus -->
-    <text x="72" y="478" fill="#C084FC" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="800" letter-spacing="1.4">EM FOCO</text>
-    <path d="M175 472H1128" stroke="#8B5CF6" stroke-opacity="0.32"/>
-
-    <g font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="650" text-anchor="middle">
-      <g><rect x="70" y="500" width="165" height="88" rx="18" fill="#0D0C18" stroke="#A855F7" stroke-opacity="0.6"/><circle cx="152" cy="527" r="8" fill="#D946EF"/><text x="152" y="561" fill="#FAF7FF">Offline-first</text></g>
-      <g><rect x="249" y="500" width="165" height="88" rx="18" fill="#0D0C18" stroke="#A855F7" stroke-opacity="0.6"/><circle cx="331" cy="527" r="8" fill="#7CFF6B"/><text x="331" y="561" fill="#FAF7FF">Spring Boot</text></g>
-      <g><rect x="428" y="500" width="165" height="88" rx="18" fill="#0D0C18" stroke="#A855F7" stroke-opacity="0.6"/><circle cx="510" cy="527" r="8" fill="#45A8FF"/><text x="510" y="561" fill="#FAF7FF">Flutter</text></g>
-      <g><rect x="607" y="500" width="165" height="88" rx="18" fill="#0D0C18" stroke="#A855F7" stroke-opacity="0.6"/><circle cx="689" cy="527" r="8" fill="#F87171"/><text x="689" y="561" fill="#FAF7FF">Java</text></g>
-      <g><rect x="786" y="500" width="165" height="88" rx="18" fill="#0D0C18" stroke="#A855F7" stroke-opacity="0.6"/><circle cx="868" cy="527" r="8" fill="#5EE58C"/><text x="868" y="561" fill="#FAF7FF">MongoDB</text></g>
-      <g><rect x="965" y="500" width="165" height="88" rx="18" fill="#0D0C18" stroke="#A855F7" stroke-opacity="0.6"/><circle cx="1047" cy="527" r="8" fill="#FFB84D"/><text x="1047" y="561" fill="#FAF7FF">AWS</text></g>
+    <g>
+      <rect x="320" y="654" width="258" height="180" rx="17" fill="#100E17" stroke="#C14DC9" stroke-opacity="0.85"/>
+      <circle cx="357" cy="694" r="18" stroke="#CF5BDB"/><path d="M347 688h19l-2 12h-14l-3-12Zm5 17h1m8 0h1" stroke="#CF5BDB" stroke-width="2" stroke-linecap="round"/>
+      <text x="388" y="701" fill="#D866E3" font-size="18" font-weight="800">Mardu Vendas</text>
+      <text x="340" y="746" fill="#E5E7EB" font-size="16">PDV e gestão comercial</text><text x="340" y="770" fill="#E5E7EB" font-size="16">pensados para operar rápido.</text>
+      <text x="340" y="811" fill="#D866E3" font-size="12" font-weight="700" letter-spacing="0.7">PRODUTO EM EVOLUÇÃO</text>
     </g>
-
-    <!-- Projects -->
-    <text x="72" y="650" fill="#C084FC" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="800" letter-spacing="1.4">PROJETOS</text>
-    <path d="M178 644H1128" stroke="#8B5CF6" stroke-opacity="0.32"/>
-
-    <g font-family="Segoe UI, Arial, sans-serif">
-      <rect x="70" y="674" width="255" height="178" rx="20" fill="#0D0C18" stroke="#22D3EE" stroke-opacity="0.55"/>
-      <circle cx="105" cy="709" r="15" fill="#102338" stroke="#22D3EE"/>
-      <path d="M95 712C103 704 111 704 119 712M96 718C104 711 111 711 118 718" stroke="#67E8F9" stroke-width="2" stroke-linecap="round"/>
-      <text x="132" y="715" fill="#67E8F9" font-size="19" font-weight="750">Sistema Pescador</text>
-      <text x="94" y="750" fill="#F1EFF7" font-size="15">Gestão especializada para</text>
-      <text x="94" y="774" fill="#F1EFF7" font-size="15">entidades e pescadores.</text>
-      <text x="94" y="814" fill="#AAA3B7" font-size="13">OFFLINE-FIRST • MULTI-ENTIDADE</text>
-
-      <rect x="340" y="674" width="255" height="178" rx="20" fill="#0D0C18" stroke="#E879F9" stroke-opacity="0.55"/>
-      <circle cx="375" cy="709" r="15" fill="#2C1231" stroke="#E879F9"/>
-      <path d="M365 704H384L381 715H369L365 704ZM371 720H371.1M379 720H379.1" stroke="#F0ABFC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <text x="402" y="715" fill="#F0ABFC" font-size="19" font-weight="750">Mardu Vendas</text>
-      <text x="364" y="750" fill="#F1EFF7" font-size="15">PDV e gestão comercial</text>
-      <text x="364" y="774" fill="#F1EFF7" font-size="15">pensados para operar rápido.</text>
-      <text x="364" y="814" fill="#AAA3B7" font-size="13">PRODUTO EM EVOLUÇÃO</text>
-
-      <rect x="610" y="674" width="255" height="178" rx="20" fill="#0D0C18" stroke="#F59E0B" stroke-opacity="0.55"/>
-      <circle cx="645" cy="709" r="15" fill="#2C2110" stroke="#F59E0B"/>
-      <path d="M637 718V700M653 718V700M633 706H657M633 714H657" stroke="#FBBF24" stroke-width="2" stroke-linecap="round"/>
-      <text x="672" y="715" fill="#FBBF24" font-size="19" font-weight="750">Guia Bridge</text>
-      <text x="634" y="750" fill="#F1EFF7" font-size="15">Automação e integração</text>
-      <text x="634" y="774" fill="#F1EFF7" font-size="15">de rotinas operacionais.</text>
-      <text x="634" y="814" fill="#AAA3B7" font-size="13">BRIDGE LOCAL • AUTOMAÇÃO</text>
-
-      <rect x="880" y="674" width="250" height="178" rx="20" fill="#0D0C18" stroke="#65F58C" stroke-opacity="0.55"/>
-      <circle cx="915" cy="709" r="15" fill="#102819" stroke="#65F58C"/>
-      <path d="M907 701H913V707H907V701ZM917 701H923V707H917V701ZM907 711H913V717H907V711ZM917 711H923V717H917V711Z" stroke="#86EFAC" stroke-width="1.6"/>
-      <text x="942" y="715" fill="#86EFAC" font-size="19" font-weight="750">Scanner Bridge</text>
-      <text x="904" y="750" fill="#F1EFF7" font-size="15">Integração local para</text>
-      <text x="904" y="774" fill="#F1EFF7" font-size="15">fluxos de digitalização.</text>
-      <text x="904" y="814" fill="#AAA3B7" font-size="13">INTEGRAÇÃO • DESKTOP</text>
+    <g>
+      <rect x="592" y="654" width="258" height="180" rx="17" fill="#12100B" stroke="#E6A21A" stroke-opacity="0.85"/>
+      <circle cx="629" cy="694" r="18" stroke="#F2AB27"/><path d="M617 700h24M620 685v27m18-27v27M615 693h28" stroke="#F2AB27" stroke-width="2"/>
+      <text x="660" y="701" fill="#FFB42B" font-size="18" font-weight="800">Guia Bridge</text>
+      <text x="612" y="746" fill="#E5E7EB" font-size="16">Automação e integração</text><text x="612" y="770" fill="#E5E7EB" font-size="16">de rotinas operacionais.</text>
+      <text x="612" y="811" fill="#FFB42B" font-size="12" font-weight="700" letter-spacing="0.7">BRIDGE LOCAL · AUTOMAÇÃO</text>
     </g>
-
-    <!-- Footer / mascot -->
-    <rect x="70" y="884" width="1060" height="76" rx="22" fill="#0D0C18" fill-opacity="0.92" stroke="#8B5CF6" stroke-opacity="0.42"/>
-    <text x="100" y="920" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="760">Menos ruído.</text>
-    <text x="260" y="920" fill="#D946EF" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="800">Mais operação.</text>
-    <text x="100" y="944" fill="#AFA8BF" font-family="Segoe UI, Arial, sans-serif" font-size="14">Mardu.io • software studio • github.com/j4xmine</text>
-
-    <!-- Original cat mascot -->
-    <g transform="translate(930 862)">
-      <path d="M57 14L72 0L84 24C99 31 108 45 108 62C108 87 88 106 62 106C36 106 16 87 16 62C16 45 25 31 40 24L51 0L57 14Z" fill="#191725" stroke="#A855F7" stroke-width="2.2"/>
-      <path d="M42 55C46 49 52 49 56 55M70 55C74 49 80 49 84 55" stroke="#F5F3FF" stroke-width="2.4" stroke-linecap="round"/>
-      <path d="M61 63L65 63L63 67L61 63Z" fill="#F472B6"/>
-      <path d="M56 72C61 77 66 77 71 72" stroke="#D8B4FE" stroke-width="2" stroke-linecap="round"/>
-      <path d="M14 52C5 53 2 63 8 69M110 52C119 53 122 63 116 69" stroke="#C084FC" stroke-width="7" stroke-linecap="round"/>
-      <rect x="37" y="89" width="52" height="30" rx="6" fill="#10101A" stroke="#8B5CF6"/>
-      <path d="M53 98L63 105L73 98V113L63 107L53 113V98Z" fill="url(#violet)"/>
+    <g>
+      <rect x="864" y="654" width="288" height="180" rx="17" fill="#0C1210" stroke="#55D978" stroke-opacity="0.85"/>
+      <circle cx="901" cy="694" r="18" stroke="#61E886"/><rect x="892" y="685" width="7" height="7" rx="1" stroke="#61E886"/><rect x="903" y="685" width="7" height="7" rx="1" stroke="#61E886"/><rect x="892" y="696" width="7" height="7" rx="1" stroke="#61E886"/><rect x="903" y="696" width="7" height="7" rx="1" stroke="#61E886"/>
+      <text x="932" y="701" fill="#6CE98D" font-size="18" font-weight="800">Scanner Bridge</text>
+      <text x="884" y="746" fill="#E5E7EB" font-size="16">Integração local para</text><text x="884" y="770" fill="#E5E7EB" font-size="16">fluxos de digitalização.</text>
+      <text x="884" y="811" fill="#6CE98D" font-size="12" font-weight="700" letter-spacing="0.7">INTEGRAÇÃO · DESKTOP</text>
     </g>
   </g>
-  <rect x="1" y="1" width="1198" height="998" rx="29" stroke="#8B5CF6" stroke-opacity="0.25" stroke-width="2"/>
+
+  <!-- footer -->
+  <rect x="48" y="860" width="1104" height="92" rx="16" fill="url(#footer)" stroke="#8F4CC2" stroke-opacity="0.8"/>
+  <rect x="78" y="881" width="5" height="50" rx="2.5" fill="url(#brand)"/>
+  <text x="104" y="905" fill="#F8FAFC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="30" font-weight="800">Menos ruído. <tspan fill="#C45CFF">Mais operação.</tspan></text>
+  <text x="104" y="932" fill="#B8B4C7" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">Mardu.io · software studio · github.com/j4xmine</text>
+  <g transform="translate(1034 881)" stroke="#B85CFF" stroke-width="3" fill="none" filter="url(#softGlow)">
+    <path d="M0 0L35 26L70 0V52L35 29L0 52V0Z"/>
+    <path d="M12 20L35 37L58 20"/>
+  </g>
 </svg>
