@@ -1,0 +1,92 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse"><stop stop-color="#050711"/><stop offset="0.52" stop-color="#090817"/><stop offset="1" stop-color="#040610"/></linearGradient>
+  <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8B5CF6"/><stop offset="0.5" stop-color="#D946EF"/><stop offset="1" stop-color="#6D5CFF"/></linearGradient>
+  <linearGradient id="title" x1="250" y1="40" x2="930" y2="145" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFFFF"/><stop offset="0.55" stop-color="#F4E8FF"/><stop offset="1" stop-color="#C084FC"/></linearGradient>
+  <radialGradient id="cityGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1325 300) rotate(90) scale(260 390)"><stop stop-color="#B026FF" stop-opacity="0.35"/><stop offset="1" stop-color="#B026FF" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" stroke="#A78BFA" stroke-opacity="0.045"/></pattern>
+  <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="soft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+<rect width="1600" height="900" rx="28" fill="url(#grid)"/>
+<rect width="1600" height="900" rx="28" fill="url(#cityGlow)"/>
+<rect x="1" y="1" width="1598" height="898" rx="27" stroke="#7C3AED" stroke-opacity="0.32" stroke-width="2"/>
+
+<!-- circuit framing -->
+<g stroke="#8B5CF6" stroke-width="2" stroke-opacity="0.55">
+  <path d="M18 70L58 30H122L138 14H372"/><path d="M18 112L72 58H184" stroke-opacity="0.28"/>
+  <circle cx="1460" cy="58" r="4" fill="#D946EF" stroke="none" filter="url(#soft)"/><path d="M1460 58H1542L1578 94V148"/>
+  <path d="M20 816H115L140 842H510"/><path d="M1090 842H1468L1494 816H1580"/>
+</g>
+
+<!-- main brand -->
+<g transform="translate(92 46)">
+  <path d="M0 0L54 40L108 0V92L54 56L0 92V0Z" fill="url(#brand)" filter="url(#glow)"/>
+  <path d="M17 27L54 55L91 27V60L54 35L17 60V27Z" fill="#F8F5FF" fill-opacity="0.92"/>
+</g>
+<text x="230" y="117" fill="url(#title)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="84" font-weight="850" letter-spacing="2">MARDU.IO</text>
+<text x="232" y="160" fill="#C7C4D2" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="29" font-weight="500" letter-spacing="2.1">Software para <tspan fill="#C45CFF">negócios reais</tspan></text>
+
+<!-- city / visual impact -->
+<g opacity="0.9">
+  <path d="M1180 349V244H1205V349M1214 349V196H1240V349M1248 349V265H1272V349M1280 349V218H1312V349M1320 349V164H1345V349M1352 349V238H1375V349M1383 349V192H1408V349M1415 349V274H1438V349M1447 349V222H1474V349M1482 349V254H1514V349" stroke="#7030C8" stroke-width="2" fill="#120A2B"/>
+  <path d="M1191 258h8m19-38h12m25 68h10m23-48h15m23-50h10m24 72h10m23-44h11m27 80h12m22-50h14m23 28h17" stroke="#4E9CFF" stroke-width="2" opacity="0.65"/>
+  <g transform="translate(1260 128)" filter="url(#glow)"><path d="M0 0L63 47L126 0V117L63 75L0 117V0Z" stroke="#CF5CFF" stroke-width="5" fill="none"/><path d="M20 37L63 70L106 37" stroke="#F4C8FF" stroke-width="4"/></g>
+  <ellipse cx="1326" cy="365" rx="184" ry="34" stroke="#A855F7" stroke-width="2" opacity="0.75"/><ellipse cx="1326" cy="365" rx="128" ry="23" stroke="#6D5CFF" stroke-width="2" opacity="0.8"/><ellipse cx="1326" cy="365" rx="72" ry="13" stroke="#E05CFF" stroke-width="2"/><circle cx="1326" cy="365" r="6" fill="#F4C8FF" filter="url(#glow)"/>
+</g>
+
+<!-- identity card -->
+<rect x="90" y="205" width="960" height="230" rx="22" fill="#0B0D18" fill-opacity="0.94" stroke="#7C5AA8" stroke-opacity="0.88"/>
+<circle cx="205" cy="320" r="78" fill="#080A13" stroke="#C45CFF" stroke-width="3" filter="url(#soft)"/>
+<path d="M165 278L205 308L245 278V363L205 335L165 363V278Z" fill="url(#brand)"/>
+<path d="M178 302L205 322L232 302V326L205 309L178 326V302Z" fill="#F7F2FF"/>
+<text x="318" y="282" fill="#FFFFFF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="47" font-weight="800">j4xmine</text>
+<text x="320" y="329" fill="#C25CFF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="22" font-weight="700">Full-stack  •  Produtos  •  Arquitetura</text>
+<rect x="320" y="349" width="84" height="3" rx="2" fill="url(#brand)"/>
+<text x="320" y="390" fill="#C8CAD4" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20">Construindo software que simplifica operações reais.</text>
+<line x1="710" y1="244" x2="710" y2="397" stroke="#353748"/>
+<g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19" fill="#D4D5DD">
+  <circle cx="758" cy="282" r="11" stroke="#B95CFF" stroke-width="3"/><circle cx="758" cy="282" r="3" fill="#B95CFF"/>
+  <text x="786" y="289">Brasil</text>
+  <circle cx="758" cy="331" r="11" stroke="#B95CFF" stroke-width="3"/><path d="M753 329l5-5 5 5-5 6-5-6Z" fill="#B95CFF"/><text x="786" y="338">github.com/j4xmine</text>
+  <circle cx="758" cy="380" r="11" stroke="#B95CFF" stroke-width="3"/><path d="M748 380h20M758 370c-5 6-5 14 0 20M758 370c5 6 5 14 0 20" stroke="#B95CFF" stroke-width="2"/><text x="786" y="387">mardu.io</text>
+</g>
+
+<!-- projects -->
+<g font-family="Inter,Segoe UI,Arial,sans-serif">
+  <g><rect x="90" y="455" width="350" height="160" rx="18" fill="#0A1018" stroke="#1EC8E6" stroke-opacity="0.85"/><circle cx="133" cy="501" r="25" stroke="#28D7F4" stroke-width="2"/><path d="M118 505c10-12 21-12 31 0M118 496c10-11 21-11 31 0" stroke="#28D7F4" stroke-width="2.5" stroke-linecap="round"/><text x="176" y="507" fill="#FFFFFF" font-size="20" font-weight="800">Sistema Pescador</text><text x="115" y="548" fill="#D0D2DB" font-size="16">Gestão especializada para</text><text x="115" y="571" fill="#D0D2DB" font-size="16">entidades e pescadores.</text><text x="115" y="602" fill="#26D6F3" font-size="12" font-weight="800" letter-spacing="1">OFFLINE-FIRST · MULTI-ENTIDADE</text></g>
+  <g><rect x="455" y="455" width="350" height="160" rx="18" fill="#100C18" stroke="#CE50DD" stroke-opacity="0.82"/><circle cx="498" cy="501" r="25" stroke="#D65BE6" stroke-width="2"/><path d="M483 493h27l-3 16h-19l-5-16Zm7 23h2m11 0h2" stroke="#D65BE6" stroke-width="2.5" stroke-linecap="round"/><text x="541" y="507" fill="#FFFFFF" font-size="20" font-weight="800">Mardu Vendas</text><text x="480" y="548" fill="#D0D2DB" font-size="16">PDV e gestão comercial</text><text x="480" y="571" fill="#D0D2DB" font-size="16">para operar rápido.</text><text x="480" y="602" fill="#D65BE6" font-size="12" font-weight="800" letter-spacing="1">PRODUTO EM EVOLUÇÃO</text></g>
+  <g><rect x="820" y="455" width="350" height="160" rx="18" fill="#12100B" stroke="#E4A11A" stroke-opacity="0.82"/><circle cx="863" cy="501" r="25" stroke="#F2AC28" stroke-width="2"/><path d="M848 508h30M852 486v34m22-34v34M846 498h34" stroke="#F2AC28" stroke-width="2.5"/><text x="906" y="507" fill="#FFFFFF" font-size="20" font-weight="800">Guia Bridge</text><text x="845" y="548" fill="#D0D2DB" font-size="16">Automação e integração</text><text x="845" y="571" fill="#D0D2DB" font-size="16">de rotinas operacionais.</text><text x="845" y="602" fill="#F2AC28" font-size="12" font-weight="800" letter-spacing="1">BRIDGE LOCAL · AUTOMAÇÃO</text></g>
+  <g><rect x="1185" y="455" width="325" height="160" rx="18" fill="#0B1210" stroke="#55D86A" stroke-opacity="0.78"/><circle cx="1228" cy="501" r="25" stroke="#60E578" stroke-width="2"/><rect x="1217" y="490" width="9" height="9" rx="1" stroke="#60E578" stroke-width="2"/><rect x="1230" y="490" width="9" height="9" rx="1" stroke="#60E578" stroke-width="2"/><rect x="1217" y="503" width="9" height="9" rx="1" stroke="#60E578" stroke-width="2"/><rect x="1230" y="503" width="9" height="9" rx="1" stroke="#60E578" stroke-width="2"/><text x="1271" y="507" fill="#FFFFFF" font-size="20" font-weight="800">Scanner Bridge</text><text x="1210" y="548" fill="#D0D2DB" font-size="16">Integração local para</text><text x="1210" y="571" fill="#D0D2DB" font-size="16">fluxos de digitalização.</text><text x="1210" y="602" fill="#60E578" font-size="12" font-weight="800" letter-spacing="1">INTEGRAÇÃO · DESKTOP</text></g>
+</g>
+
+<!-- stack strip -->
+<rect x="90" y="635" width="1420" height="92" rx="18" fill="#0B0D18" stroke="#6C5AB0" stroke-opacity="0.78"/>
+<g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" fill="#E6E7EE">
+  <g transform="translate(135 657)"><path d="M14 3c-7 8 8 9 0 17 12-7-5-10 4-19" stroke="#FF655F" stroke-width="2.5"/><path d="M4 28c13 5 25 5 35 0M6 35c12 4 22 4 31 0" stroke="#FF655F" stroke-width="2.5"/><text x="50" y="33">Java</text></g>
+  <g transform="translate(280 658)"><path d="M0 28L27 1H43L16 28l16 16H16L0 28Z" fill="#3FB8FF"/><text x="56" y="32">Flutter</text></g>
+  <g transform="translate(450 658)"><path d="M6 8L27 1l20 20v24H22L2 25 6 8Z" fill="#3F8DDB"/><path d="M6 8h22l19 19" stroke="#69B6FF" stroke-width="3"/><text x="60" y="32">Dart</text></g>
+  <g transform="translate(605 655)"><circle cx="25" cy="25" r="22" fill="#69C640"/><path d="M18 16v17m14-17v17M12 27c0 9 6 15 13 15s13-6 13-15" stroke="#0C3910" stroke-width="3"/><text x="60" y="35">Spring Boot</text></g>
+  <g transform="translate(815 655)"><path d="M25 2c18 20 10 39 0 47-10-8-18-27 0-47Z" fill="#4ED36A"/><path d="M25 9v39" stroke="#0D6F36" stroke-width="2"/><text x="60" y="35">MongoDB</text></g>
+  <g transform="translate(1000 657)"><path d="M3 26h42c-2 12-12 18-25 18C9 44 3 38 3 26Z" fill="#2FA8E6"/><rect x="11" y="15" width="8" height="8" fill="#2FA8E6"/><rect x="21" y="15" width="8" height="8" fill="#2FA8E6"/><rect x="31" y="15" width="8" height="8" fill="#2FA8E6"/><path d="M42 24c7-7 12-4 15-1-4 1-7 4-10 8" stroke="#2FA8E6" stroke-width="3"/><text x="68" y="33">Docker</text></g>
+  <g transform="translate(1190 658)"><text x="0" y="28" fill="#FFFFFF" font-size="28">aws</text><path d="M0 35c22 13 47 12 64 0" stroke="#FFB13B" stroke-width="3" stroke-linecap="round"/><text x="78" y="32">AWS</text></g>
+  <g transform="translate(1370 655)"><rect x="0" y="4" width="44" height="44" rx="3" fill="#3178C6"/><text x="9" y="36" fill="#FFFFFF" font-weight="800" font-size="22">TS</text><text x="56" y="35">TypeScript</text></g>
+</g>
+
+<!-- capability icons -->
+<rect x="90" y="744" width="1420" height="84" rx="18" fill="#0B0D18" stroke="#8B3BC8" stroke-opacity="0.75"/>
+<g stroke="#C45CFF" stroke-width="3" fill="none" filter="url(#soft)">
+  <g transform="translate(170 766)"><circle cx="16" cy="12" r="9"/><circle cx="40" cy="14" r="7"/><path d="M2 42c2-13 28-13 30 0M30 40c2-9 20-9 22 0"/></g>
+  <g transform="translate(335 765)"><path d="M8 2h30l12 12v38H8V2Z"/><path d="M38 2v14h12M16 27h24M16 36h24"/></g>
+  <g transform="translate(515 764)"><circle cx="26" cy="27" r="25"/><path d="M26 12v30M34 18c-3-4-15-5-17 2-3 10 18 7 17 16-1 7-13 7-18 2"/></g>
+  <g transform="translate(690 765)"><path d="M2 22c14-14 34-14 48 0M10 30c10-10 22-10 32 0M19 38c5-5 9-5 14 0"/><path d="M0 2l52 52"/></g>
+  <g transform="translate(865 764)"><path d="M10 17c8-13 28-17 41-7l7 7M58 5v12H46M50 39c-8 13-28 17-41 7l-7-7M2 51V39h12"/></g>
+  <g transform="translate(1045 764)"><path d="M27 2l24 9v18c0 15-9 24-24 30C12 53 3 44 3 29V11l24-9Z"/><path d="M16 30l8 8 16-18"/></g>
+  <g transform="translate(1225 766)"><path d="M4 50V31h9v19M20 50V21h9v29M36 50V10h9v40M52 50V2h9v48"/></g>
+  <g transform="translate(1395 766)"><path d="M14 42H48c12 0 14-17 3-21-1-12-17-17-24-8-11-5-20 4-18 14-10 5-6 15 5 15Z"/><circle cx="16" cy="50" r="3" fill="#C45CFF"/><circle cx="31" cy="50" r="3" fill="#C45CFF"/><circle cx="46" cy="50" r="3" fill="#C45CFF"/><path d="M16 42v8M31 42v8M46 42v8"/></g>
+</g>
+
+<!-- closing -->
+<text x="800" y="870" text-anchor="middle" fill="#F5F5F7" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="34" font-weight="800">Menos ruído. <tspan fill="#A85CFF">Mais operação.</tspan></text>
+</svg>
